@@ -1,4 +1,3 @@
-# Python-for-data-science
 {
  "cells": [
   {
@@ -16,7 +15,7 @@
    "source": [
     "# Demo\n",
     "# initialize variable 'msg' with the string 'Hello World'\n",
-    "msg = _____\n",
+    "msg = string\n",
     "\n",
     "# Solution\n",
     "msg = \"Hello World\""
@@ -31,11 +30,11 @@
    "outputs": [],
    "source": [
     "# initialize variables 'a' and 'b' with 5 and 6 respectively\n",
-    "a = _____ \n",
-    "b = _____\n",
+    "a = 5 \n",
+    "b = 6\n",
     "\n",
     "# add 'a' and 'b' and assign the result into a new variable 'c'\n",
-    "c = _____ + _____\n",
+    "c = a + b\n",
     "print(c)"
    ]
   },
@@ -49,10 +48,10 @@
    "source": [
     "# build a function to add 2 numbers\n",
     "def addition(x,y):\n",
-    "    return(_____ + _____)\n",
+    "    return(x + y)\n",
     "\n",
     "# use the function 'addition' to add 'a' and 'b'\n",
-    "addition(_____, _____)"
+    "addition(a, b)"
    ]
   },
   {
@@ -64,8 +63,8 @@
    "outputs": [],
    "source": [
     "# create a list consisting of first 5 even numbers and print the list\n",
-    "my_list = [_____,_____,_____,_____,_____]\n",
-    "print(_____)"
+    "my_list = [2,4,6,8,10]\n",
+    "print(my_list)"
    ]
   },
   {
@@ -77,7 +76,7 @@
    "outputs": [],
    "source": [
     "# access the 3rd element of the list 'my_list'\n",
-    "my_list[_____]"
+    "my_list[2]"
    ]
   },
   {
@@ -107,7 +106,7 @@
    "outputs": [],
    "source": [
     "# access value under 'name' key from 'my_dict'\n",
-    "my_dict[_____]"
+    "my_dict['name']"
    ]
   },
   {
@@ -119,7 +118,7 @@
    "outputs": [],
    "source": [
     "# update 'is_employed' key to True\n",
-    "my_dict.update({'is_employed': _____})\n",
+    "my_dict.update({'is_employed':True})\n",
     "\n",
     "# print the updated dictionary\n",
     "print(my_dict)"
@@ -136,7 +135,7 @@
     "# use a for loop to print only even numbers from the first 20 numbers, i.e. 1-20\n",
     "for i in range(1,21):\n",
     "    if i % 2 == 0:\n",
-    "        print(_____)"
+    "        print(i)"
    ]
   },
   {
@@ -168,7 +167,7 @@
    "outputs": [],
    "source": [
     "## read data_python.csv using pandas\n",
-    "mydata = pd._____(\"data_python.csv\")"
+    "mydata = pd.read_csv(\"data_python.csv\")"
    ]
   },
   {
@@ -180,7 +179,7 @@
    "outputs": [],
    "source": [
     "## print the number of rows and number of columns of mydata\n",
-    "mydata._____"
+    "mydata.shape"
    ]
   },
   {
@@ -192,7 +191,7 @@
    "outputs": [],
    "source": [
     "## assign a variable 'target' with the 'Loan_Status' feature from mydata dataframe\n",
-    "target = mydata[_____]"
+    "target = mydata['Loan_Status']"
    ]
   },
   {
@@ -204,7 +203,7 @@
    "outputs": [],
    "source": [
     "## print the datatype of ApplicantIncome feature\n",
-    "print(mydata['ApplicantIncome']._____)"
+    "print(mydata['ApplicantIncome'].dtypes)"
    ]
   },
   {
@@ -216,10 +215,10 @@
    "outputs": [],
    "source": [
     "## conditional statement - print 'Yes' if the 21st element of 'Education' feature is 'Graduate' else print 'No'\n",
-    "if(mydata['Education'][20] == 'Graduate'):\n",
-    "    print(_____)\n",
+    "if(mydata['Education'][21] == 'Graduate'):\n",
+    "    print('yes')\n",
     "else:\n",
-    "    print(_____)   "
+    "    print('no')   "
    ]
   },
   {
@@ -231,7 +230,7 @@
    "outputs": [],
    "source": [
     "## print 31st to 35th rows of mydata\n",
-    "mydata.iloc[_____:_____]"
+    "mydata.iloc[31:36]"
    ]
   },
   {
@@ -243,7 +242,7 @@
    "outputs": [],
    "source": [
     "## print first 5 rows of 2nd and 3rd column only\n",
-    "mydata.iloc[:_____,_____:_____]"
+    "mydata.iloc[:5,[1,2]]"
    ]
   }
  ],
@@ -269,3 +268,5 @@
  "nbformat": 4,
  "nbformat_minor": 2
 }
+
+
